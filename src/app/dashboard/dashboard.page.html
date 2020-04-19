@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      
+    </ion-row>
+    <ion-row>
+      
+        <ion-button expand = "block" color = "dark" [routerLink] = "['/reports']">Reports<ion-icon slot="start" name="clipboard"></ion-icon></ion-button>
+        
+    </ion-row>
+        <ion-row>
+        <ion-button expand = "block" color = "dark" [routerLink] = "['/ocr']">OCR<ion-icon slot="start" name="albums"></ion-icon></ion-button>
+        </ion-row>
+        <ion-row>
+      
+        <ion-button expand = "block" color = "dark"  [routerLink] = "['/members']">Members<ion-icon slot="start" name="people"></ion-icon></ion-button>
+      </ion-row>
+      <ion-row>
+      
+        <ion-button expand = "block" color = "dark"  [routerLink] = "['/notify']">Reminder<ion-icon slot="start" name="stopwatch"></ion-icon></ion-button>
+      </ion-row>
+      <ion-row>
+      
+        <ion-button expand = "block" color = "dark"  [routerLink] = "['/visualize']">Visualize<ion-icon slot="start" name="pie"></ion-icon></ion-button>
+      </ion-row>
+
+    
+    
+  </ion-grid>  
+  
+  
+</ion-content>
+<ion-footer (click)="logout()">
+  <ion-toolbar color="light">
+    <ion-title>Log out</ion-title>
+  </ion-toolbar>
+</ion-footer>
+
